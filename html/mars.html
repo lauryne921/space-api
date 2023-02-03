@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/generic.css">
+    <link rel="stylesheet" href="../css/mars.css">
+    <title>Space Insight</title>
+</head>
+<body>
+    <header>
+        <h1>Space Insight</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../">Home</a>
+                </li>
+                <li>
+                    <a id="mars-page" href="./mars.html">Mars</a>
+                </li>
+                <li>
+                    <a href="./pictureOfTheDay.html">POTD</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="text-home">
+                <h2>Here, you can find some pictures of the planet Mars</h2>
+                <a href="https://mars.nasa.gov/multimedia/images/?page=0&per_page=25&order=pub_date+desc&search=&condition_1=1%3Ais_in_resource_list&category=51" target="_blank"><button>Discover More</button></a>
+                <div id="rover-choice">
+                    <div class="rover curiosity">
+                        <div id="img-curiosity"></div>
+                        <div id="name">Curiosity</div>
+                    </div>
+                    <div class="rover opportunity">
+                        <div id="img-opportunity"></div>
+                        <div id="name">Opportunity</div>
+                    </div>
+                    <div class="rover spirit">
+                        <div id="img-spirit"></div>
+                        <div id="name">Spirit</div>
+                    </div>
+                </div>
+            </div>
+            <img src="../assets/mars.webp" alt="nasa-bat" id="nasa-mars">
+        </section>
+        <section id="main-body">
+            <h2>Photo taken by the <span id="rover-span"></span> rover</h2>
+            <div id="wrapper"></div>
+            <template id="photo-template">
+                <div id="card">
+                    <div id="image"></div>
+                    <h2 id="camera-name"></h2>
+                    <div id="informations-rover">
+                        <div id="rover-name"></div>
+                        <div id="rover-status"></div>
+                    </div>
+                    <div id="rover-landing"></div>
+                </div>
+            </template>
+        </section>
+    </main>
+    <script src="../js/mars.js"></script>
+</body>
+</html>

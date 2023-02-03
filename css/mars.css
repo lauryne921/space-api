@@ -1,0 +1,132 @@
+header {
+    position: fixed;
+    width: 100%;
+}
+
+#mars-page {
+    color: white;
+}
+
+#home {
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+    grid-gap: 1rem;
+}
+#nasa-mars {
+    margin-top: 5vh;
+}
+
+#rover-choice {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.rover {
+    box-shadow: 0px 0px 10px #4cbcdb;
+}
+.rover:hover {
+    box-shadow: 0px 0px 25px #009ac4;
+    cursor: pointer;
+}
+#img-curiosity {
+    background-image: url(../assets/curiosity.jpeg);
+    background-size: cover;
+    height: 10rem;
+}
+#img-opportunity {
+    background-image: url(../assets/opportunity.jpeg);
+    background-size: cover;
+    height: 10rem;
+}
+#img-spirit {
+    background-image: url(../assets/spirit.jpeg);
+    background-size: cover;
+    height: 10rem;
+}
+#name {
+    margin: 1rem;
+}
+
+#main-body {
+    background-color: white;
+    color: black;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+
+#image {
+    height: 20rem;
+}
+
+#camera-name {
+    font-size: 20px;
+}
+
+#card {
+    box-shadow: 0px 0px 15px rgb(1, 24, 41);
+}
+
+
+
+@media screen and (max-width: 880px) {
+    header ul {
+        margin-right: 2.8rem;
+    }
+
+    #home {
+        padding-top: 7vh;
+    }
+
+    #nasa-mars {
+        display: none;
+    }
+    #img-curiosity, #img-opportunity, #img-spirit {
+        height: 10rem;
+    }
+
+    #wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+@media screen and (max-width: 450px) {
+    #home {
+        padding-top: 12vh;
+        padding-bottom: 5vh;
+        grid-gap: 1rem;
+        grid-template-rows: 1fr;
+    }
+    #text-home {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    #home img {
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #rover-choice {
+        margin-top: 2rem;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+    .rover {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #img-curiosity, #img-opportunity, #img-spirit {
+        height: 5rem;
+    }
+
+    #wrapper {
+        grid-template-columns: 1fr;
+    }
+}

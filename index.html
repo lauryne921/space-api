@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/generic.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <title>Space Insight</title>
+</head>
+<body>
+    <header>
+        <h1>Space Insight</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a id="home-page" href="./">Home</a>
+                </li>
+                <li>
+                    <a href="./html/mars.html">Mars</a>
+                </li>
+                <li>
+                    <a href="./html/pictureOfTheDay.html">POTD</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="text-home">
+                <h2>Welcome on this site</h2>
+                <p>Here, you can find all the NASA's informations from their API</p>
+                <div id="home-btn">
+                    <a id="discover-btn" href="https://www.nasa.gov/" target="_blank"><button>Discover More</button></a>
+                    <a href="./html/pictureOfTheDay.html"><button>Get More Details of POTD</button></a>
+                </div>
+            </div>
+            <div id="picture-container">
+                <div id="picture-of-the-day"></div>
+                <p>Picture of the day : <strong><span id="title-picture"></span></strong></p>
+            </div>
+            <!--<img src="./assets/nasa-bat.jpeg" alt="nasa-bat" id="nasa-bat">-->
+        </section>
+        <section id="main-body">
+            <div id="choose">
+                <h2>What is the photo of your birth day ?</h2>
+                <div id="input-btn">
+                    <input type="text" name="date-birth" id="date-birth" placeholder="YYYY-MM-DD" value="">
+                    <button id="generate-btn">Generate</button>
+                </div>
+            </div>
+            <div id="wrapper"></div>
+            <template id="photo-template">
+                <div id="card">
+                    <h2 id="title"></h2>
+                    <div id="date"></div>
+                    <div id="informations">
+                        <div id="image"></div>
+                        <div id="explanation"></div>
+                    </div>
+                </div>
+            </template>
+        </section>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
